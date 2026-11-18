@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11822.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MandelbrotApp", "MandelbrotApp\MandelbrotApp.vcxproj", "{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MandelbrotAsm", "MandelbrotAsm\MandelbrotAsm.vcxproj", "{D85C41B3-7820-4A96-9150-0283797A72EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}.Debug|x64.ActiveCfg = Debug|x64
+		{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}.Debug|x64.Build.0 = Debug|x64
+		{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}.Release|x64.ActiveCfg = Release|x64
+		{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}.Release|x64.Build.0 = Release|x64
+		{D85C41B3-7820-4A96-9150-0283797A72EF}.Debug|x64.ActiveCfg = Debug|x64
+		{D85C41B3-7820-4A96-9150-0283797A72EF}.Debug|x64.Build.0 = Debug|x64
+		{D85C41B3-7820-4A96-9150-0283797A72EF}.Release|x64.ActiveCfg = Release|x64
+		{D85C41B3-7820-4A96-9150-0283797A72EF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{6F80689D-D6CB-42B8-AD45-8D1925CBACF8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MandelbrotApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  
+  <ImportGroup Label="PropertySheets"><Import Project="..\Shared.props" /></ImportGroup>
+  <PropertyGroup><TargetName>MandelbrotApp</TargetName></PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>User32.lib;Gdi32.lib;Shell32.lib;Comctl32.lib;Gdiplus.lib;Dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Gui.cpp" />
+    <ClCompile Include="UiTheme.cpp" />
+    <ClCompile Include="MandelbrotCpp.cpp" />
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="SelfTests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\MandelbrotApi.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="UiTheme.h" />
+  </ItemGroup>
+  <ItemGroup><ProjectReference Include="..\MandelbrotAsm\MandelbrotAsm.vcxproj"><Project>{D85C41B3-7820-4A96-9150-0283797A72EF}</Project><LinkLibraryDependencies>true</LinkLibraryDependencies></ProjectReference></ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  
+</Project>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe"><UniqueIdentifier>{48FB8148-C398-4DC2-9A74-75F84F49EA57}</UniqueIdentifier></Filter>
+    <Filter Include="Pliki nagłówkowe"><UniqueIdentifier>{CCBC0581-BB7C-4713-B249-6315A1BCA389}</UniqueIdentifier></Filter>
+    <Filter Include="Konfiguracja"><UniqueIdentifier>{D951E182-25C1-4606-985B-19FEAE957FCB}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+    <ClCompile Include="Gui.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+    <ClCompile Include="UiTheme.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+    <ClCompile Include="MandelbrotCpp.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+    <ClCompile Include="Benchmark.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+    <ClCompile Include="SelfTests.cpp"><Filter>Pliki źródłowe</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\MandelbrotApi.h"><Filter>Pliki nagłówkowe</Filter></ClInclude>
+    <ClInclude Include="Engine.h"><Filter>Pliki nagłówkowe</Filter></ClInclude>
+    <ClInclude Include="UiTheme.h"><Filter>Pliki nagłówkowe</Filter></ClInclude>
+  </ItemGroup>
+  
+</Project>
